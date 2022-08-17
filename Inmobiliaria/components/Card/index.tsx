@@ -4,12 +4,14 @@ import { AntDesign } from "@expo/vector-icons";
 
 import realState from "../../assets/data/realState.json";
 import CardImage from "../CardImage";
+import CardDescription from "../CardDescription";
 const house1 = realState[0];
 
 const Card = () => {
   return (
     <View style={styles.container}>
       <CardImage photo={house1.imgURL} rating='4.7'/>
+      <CardDescription />
     </View>
   );
 };
@@ -22,6 +24,7 @@ const styles = StyleSheet.create({
     width: "100%",
     borderRadius: 20,
     padding: 20,
+    flexDirection: 'row'
   },
   
   leftContainer: {},
