@@ -23,13 +23,15 @@ export default CardImage
 const styles = StyleSheet.create({
   container: {
     //backgroundColor: 'red',
-    width: 140,
+    //width: '100%',
+    height: 150,
     justifyContent: 'center',
     alignItems: 'center'
+    
   },
   photo: {
-    width: 140,
-    height: 140,
+    width: 120,
+    height: 120,
     borderRadius: 20,
     
   },

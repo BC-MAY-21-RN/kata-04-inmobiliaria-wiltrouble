@@ -10,8 +10,13 @@ const house1 = realState[0];
 const Card = () => {
   return (
     <View style={styles.container}>
-      <CardImage photo={house1.imgURL} rating='4.7'/>
-      <CardDescription />
+      
+      <View style={{width: '35%', backgroundColor: 'red'}}>
+        <CardImage photo={house1.imgURL} rating='4.7'/>
+      </View>
+      <View style={{width: '65%', backgroundColor: 'orange'}}>
+        <CardDescription />
+      </View>
     </View>
   );
 };
@@ -23,8 +28,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5FDFF",
     width: "100%",
     borderRadius: 20,
-    padding: 20,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    paddingVertical: 10,
   },
   
   leftContainer: {},
