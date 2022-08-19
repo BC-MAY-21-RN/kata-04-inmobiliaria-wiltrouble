@@ -22,18 +22,14 @@ export default CardImage
 
 const styles = StyleSheet.create({
   container: {
-    //backgroundColor: 'red',
-    //width: '100%',
-    height: 150,
+    height: 160,
     justifyContent: 'center',
     alignItems: 'center'
-    
   },
   photo: {
     width: 120,
     height: 120,
     borderRadius: 20,
-    
   },
   rating: {
     color: "#7A6229",
@@ -43,11 +39,12 @@ const styles = StyleSheet.create({
   ratingContainer: {
     flexDirection: "row",
     backgroundColor: "#FBEDB7",
-    width: 60,
+    width: 70,
     justifyContent: "center",
     alignItems: "center",
     position: 'absolute',
-    bottom: 5,
-    borderRadius: 6
+    bottom: 27,
+    borderRadius: 15,
+    padding: 5,
   },
 })

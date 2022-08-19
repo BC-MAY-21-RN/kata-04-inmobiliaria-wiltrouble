@@ -11,10 +11,10 @@ const Card = () => {
   return (
     <View style={styles.container}>
       
-      <View style={{width: '35%', backgroundColor: 'red'}}>
+      <View style={{width: '40%'}}>
         <CardImage photo={house1.imgURL} rating='4.7'/>
       </View>
-      <View style={{width: '65%', backgroundColor: 'orange'}}>
+      <View style={{width: '60%'}}>
         <CardDescription />
       </View>
     </View>
@@ -31,6 +31,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingVertical: 10,
   },
-  
   leftContainer: {},
 });
