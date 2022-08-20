@@ -1,21 +1,47 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { AntDesign } from "@expo/vector-icons";
-
-import realState from "../../assets/data/realState.json";
 import CardImage from "../CardImage";
 import CardDescription from "../CardDescription";
-const house1 = realState[0];
 
-const Card = () => {
+interface Card {
+  title: string;
+  location: string;
+  beds: number;
+  baths: number;
+  area: number;
+  price: number;
+  fav: boolean;
+  ratingDate: number;
+  id: number;
+  photo: string;
+}
+
+const Card = ({
+  title,
+  location,
+  beds,
+  baths,
+  area,
+  price,
+  fav,
+  ratingDate,
+  photo,
+}: Card) => {
   return (
     <View style={styles.container}>
-      
-      <View style={{width: '40%'}}>
-        <CardImage photo={house1.imgURL} rating='4.7'/>
+      <View style={{ width: "40%" }}>
+        <CardImage photo={photo} rating={ratingDate} />
       </View>
-      <View style={{width: '60%'}}>
-        <CardDescription />
+      <View style={{ width: "60%" }}>
+        <CardDescription
+          title={title}
+          location={location}
+          beds={beds}
+          baths={baths}
+          area={area}
+          price={price}
+          fav={fav}
+        />
       </View>
     </View>
   );
@@ -28,7 +54,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5FDFF",
     width: "100%",
     borderRadius: 20,
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingVertical: 10,
   },
   leftContainer: {},

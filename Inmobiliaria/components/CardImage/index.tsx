@@ -3,10 +3,12 @@ import React from 'react'
 import { AntDesign } from "@expo/vector-icons";
 interface ImageCard {
   photo: string,
-  rating: string,
+  rating: number,
 }
 
 const CardImage = ({photo, rating}:ImageCard) => {
+  console.log(photo);
+  
   return (
     <View style={styles.container}>
       <Image style={styles.photo} source={{ uri: photo }} />
