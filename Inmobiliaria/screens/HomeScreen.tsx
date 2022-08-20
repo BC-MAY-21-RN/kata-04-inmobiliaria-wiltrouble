@@ -23,7 +23,7 @@ export default function TabOneScreen({
   );
   return (
     <View style={styles.container}>
-      <FlatList data={realState} renderItem={renderItem} />
+      <FlatList data={realState} renderItem={renderItem} showsVerticalScrollIndicator={false}/>
     </View>
   );
 }

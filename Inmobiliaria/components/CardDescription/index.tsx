@@ -6,6 +6,7 @@ import {
   Feather,
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
+import {styles} from './styles'
 
 interface CardDescription {
   title: string,
@@ -16,7 +17,6 @@ interface CardDescription {
   price: number,
   fav: boolean,
 }
-
 
 const CardDescription = ({title, location, beds, baths, area, price, fav} : CardDescription) => {
   return (
@@ -43,38 +43,3 @@ const CardDescription = ({title, location, beds, baths, area, price, fav} : Card
 };
 
 export default CardDescription;
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: "center",
-    height: 160,
-    paddingHorizontal: 10,
-  },
-  title: {
-    fontWeight: "500",
-    fontSize: 22,
-    color: "#151525",
-    paddingTop: 20
-  },
-  row: {
-    flexDirection: "row",
-    paddingTop: 10,
-  },
-  textLocation: {
-    color: "#737373",
-  },
-  lastRow: {
-    justifyContent: "space-between",
-  },
-  icons: {
-    justifyContent: "space-between",
-  },
-  textIcon: {
-    fontWeight: '700',
-    fontSize: 17
-  },
-  price: {
-    fontSize: 25,
-    fontWeight: 'bold'
-  }
-});

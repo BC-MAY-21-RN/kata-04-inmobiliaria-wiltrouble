@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import CardImage from "../CardImage";
 import CardDescription from "../CardDescription";
+import {styles} from './styles'
 
 interface Card {
   title: string;
@@ -48,14 +49,3 @@ const Card = ({
 };
 
 export default Card;
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#F5FDFF",
-    width: "100%",
-    borderRadius: 20,
-    flexDirection: "row",
-    paddingVertical: 10,
-  },
-  leftContainer: {},
-});
